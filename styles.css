@@ -3,12 +3,28 @@ body {
     margin: 0;
 }
 
+/*the left */
+
+.header, .main {
+    padding-left: 170px;
+    padding-right: 200px;
+}
+
 .header {
     display: flex;
     background-color: #1f2937;
     /*this might be a problem when u get to the other shit*/
-    padding: 0px 60px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     align-items: center;
+}
+
+.main {
+    display: flex;
+    background-color: #1f2937;
+    padding-top: 80px;
+    padding-bottom:80px;
+   
 }
 
 .title {
@@ -37,12 +53,7 @@ ul {
     gap: 20px;
 }
 
-.main {
-    display: flex;
-    background-color: #1f2937;
-    padding: 80px 60px;
-   
-}
+
 
 .l-side {
     display: flex;
@@ -59,13 +70,15 @@ p {
 
 
 .image {
-    min-width: 450px;
+    min-width: 500px;
+    min-height: 230px;
     color: rgb(238, 238, 238);
     background-color: #8d8d8f;
     /*will make the text centred - might change later in order to put an actual image*/
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: auto;
 }
 
 .sign-up-button {
@@ -75,4 +88,64 @@ p {
     margin-right: auto;
     /*makes the rounded corners*/
     border-radius: 5px;
+}
+
+.information{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+
+.box {
+    border-radius: 25px;
+    border: 4px solid #3882f6;
+    width: 150px;
+    height:150px;
+}
+.subtitle {
+    margin: 50px auto;
+    font-weight: 750;
+    font-size: 36px;
+    color: #1f2937;
+
+}
+
+.cards {
+    display: flex;
+    
+}
+.text {
+    padding-top: 8px;
+}
+
+.one {
+    margin-left: 45px;
+    width: 150px;
+    text-align: center;
+    color: #787878;
+}
+
+.quote-section {
+    background-color: #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    padding: 100px 300px;
+}
+
+.quote {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 200;
+    color: #1f2937;
+}
+
+.author{
+    margin-left: auto;
+    color: #1f2937;
+    font-weight: bold;
+    font-size: 20px;
 }
